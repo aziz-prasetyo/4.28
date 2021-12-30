@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+  <link rel="shortcut icon" href="favicon.png">
+  <title>Bingung Ngasih Judul</title>
+  <script src="js/anime.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="preloader">
+    <img class="preloader-img" src="preloader.gif" alt="preloader.gif">
+    <h4 class="preloader-text"></h4>
+  </div>
+  <section>
+    <img src="img/image4.png" alt="" class="layer" speed="4">
+    <img src="img/image3.png" alt="" class="layer" speed="2">
+    <img src="img/image2.png" alt="" class="layer" speed="4">
+    <img src="img/image1.png" alt="" class="layer" speed="2">
+  </section>
+  <div class="shape-box">
+    <span class="shape shape1 layer" speed="4"></span>
+    <span class="shape shape2 layer" speed="-4"></span>
+  </div>
+    <div class="exit-page">
+      <img src="img/13273.jpg" alt="13273.jpg">
+      <div class="exit-page-text"></div>
+    </div>
+    <img src="dec/5df/b95/600/gsa63-sgs7ws.png" class="lose-page1">
+    <img src="dec/5df/b95/600/57346-04eccb7c4f75c5afc33a27cc8b6b6320.jpg" class="lose-page2">
+    <img src="dec/5df/b95/600/84ba68f0079f768f87809f8097ed2d0f.png" class="lose-page3">
+    <div class="button-box">
+      <div class="info-box"></div>
+      <button id="start-btn" class="btn start-btn"><i class="fas fa-play"></i></button>
+    </div>
+    <div class="bab1">
+      <div class="title">
+        <h3>BAB I</h3>
+        <h3>Perkenalan</h3>
+      </div>
+      <div class="content1-box">
+        <label for="name">
+          <p>Hai! Namaku Rara.</p>
+          <p>Siapa nama lengkapmu?</p>
+        </label>
+        <div class="input-box">
+          <div class="error-message">
+            <p>Sayang, beritahu nama lengkapmu.</p>
+            <p>Tidak boleh ada angka atau simbol.</p>
+          </div>
+          <div class="error-message2">
+            <p>Nama lengkapmu Uma Raissa Janitra, bukan?</p>
+            <p>Hayo, kenapa kamu berbohong?</p>
+          </div>
+          <input id="name" type="text" maxlength="18">
+        </div>
+        <button id="save-btn" class="btn save-btn">simpan</button>
+      </div>
+    </div>
+    <div class="bab2">
+      <div class="title">
+        <h3>BAB II</h3>
+        <h3>Kata Pengantar</h3>
+      </div>
+      <div class="content2-box">
+        <div class="content-text">
+          <p>SELAMAT DATANG!</p>
+          <p><b></b></p>
+          <p>Pada kesempatan kali ini, kita akan melakukan sedikit permainan. Judul permainannya adalah "Apanih?". Kamu harus menjawab beberapa pertanyaan yang Rara sediakan. Terkadang, kamu juga harus menebak, Rara itu seperti apa.</p>
+          <p>Selanjutnya, di ujung permainan akan ada sesi rekap hasil permainan.</p>
+          <p>Oleh sebab itu, jawablah pertanyaan-pertanyaan itu dengan serius.</p>
+          <p>Apakah <b></b> siap?</p>
+        </div>
+          <div class="option-box">
+            <button id="next-btn" class="btn next-btn">Lanjut</button>
+            <button id="exit-btn" class="btn exit-btn">Keluar</button>
+          </div>
+      </div>
+    </div>
+    <div class="bab3">
+      <div class="title">
+        <h3>BAB III</h3>
+        <h3>Persiapan</h3>
+      </div>
+      <div class="content3-box">
+        <p><b>Sebelum kita mulai, Rara akan menjelaskan ketentuan dan aturan permainan, yaitu :</b></p>
+        <ol>
+          <li>Setiap pertanyaan memiliki batas waktu <span>20 detik</span> untuk dijawab.</li>
+          <li>Setelah menekan tombol MULAI, tidak ada tombol PAUSE atau KEMBALI, sehingga kamu harus menyelesaikannya saat itu juga.</li>
+          <li>Refresh halaman akan mengulang dari awal.</li>
+          <li>Berhati-hatilah saat memilih jawaban karena kamu tidak bisa merubahnya.</li>
+          <li>Jika terlempar ke halaman lain, maka kamu dinyatakan KALAH.</li>
+          <li>Jawablah dengan jujur agar mendapatkan hasil yang terbaik.</li>
+        </ol>
+        <p>Apabila sudah siap, silakan tekan tombol MULAI untuk memulai permainan. Jika belum, berarti kamu belum siap.</p>
+        <p><i>GOOD LUCK...!</i> &#128513;</p>
+        <button id="play-btn" class="btn play-btn">mulai</button>
+      </div>
+    </div>
+    <div class="bab4">
+      <div class="title">
+        <h3>BAB IV</h3>
+        <h3>Mulai</h3>
+      </div>
+      <div class="content4-box">
+        <div class="wrong-ans">
+          <p>benar <span>0</span></p>
+        </div>
+        <div class="top-box">
+          <div class="timer-box">
+            <p>20</p>
+          </div>
+          <div class="timer-line"></div>
+          <div class="question-text">
+            <!-- <p>Di antara warna berikut, warna apa yang paling Rara suka?</p> -->
+          </div>
+        </div>
+        <div class="option-answer">
+          <!-- <button id="answer-btn1" class="btn answer-btn opt">1</button>
+          <button id="answer-btn2" class="btn answer-btn opt">2</button>
+          <button id="answer-btn3" class="btn answer-btn opt">3</button>
+          <button id="answer-btn4" class="btn answer-btn opt">4</button> -->
+        </div>
+      </div>
+      <div class="next-que">
+        <!-- <button id="next-que" class="btn">Next<i class="fas fa-angle-double-right"></i></button> -->
+      </div>
+    </div>
+    <div class="backdrop">
+      <img class="confetti" src="img/10959.jpg" alt="" srcset="">
+      <div class="last-page">
+        <div class="balloons">
+          <div class="balloon1-box">
+            <div class="balloon balloon1"></div>
+          </div>
+          <div class="balloon2-box">
+            <div class="balloon balloon2"></div>
+          </div>
+          <div class="balloon3-box">
+            <div class="balloon balloon3"></div>
+          </div>
+          <div class="balloon4-box">
+            <div class="balloon balloon4"></div>
+          </div>
+          <div class="balloon5-box">
+            <div class="balloon balloon5"></div>
+          </div>
+          <div class="balloon6-box">
+            <div class="balloon balloon6"></div>
+          </div>
+          <div class="balloon7-box">
+            <div class="balloon balloon7"></div>
+          </div>
+          <div class="balloon8-box">
+            <div class="balloon balloon8"></div>
+          </div>
+          <div class="balloon9-box">
+            <div class="balloon balloon9"></div>
+          </div>
+          <div class="balloon19-box">
+            <div class="balloon balloon19"></div>
+          </div>
+          <div class="balloon18-box">
+            <div class="balloon balloon18"></div>
+          </div>
+          <div class="balloon17-box">
+            <div class="balloon balloon17"></div>
+          </div>
+          <div class="balloon16-box">
+            <div class="balloon balloon16"></div>
+          </div>
+          <div class="balloon15-box">
+            <div class="balloon balloon15"></div>
+          </div>
+          <div class="balloon14-box">
+            <div class="balloon balloon14"></div>
+          </div>
+          <div class="balloon13-box">
+            <div class="balloon balloon13"></div>
+          </div>
+          <div class="balloon12-box">
+            <div class="balloon balloon12"></div>
+          </div>
+          <div class="balloon11-box">
+            <div class="balloon balloon11"></div>
+          </div>
+          <div class="balloon10-box">
+            <div class="balloon balloon10"></div>
+          </div>
+        </div>
+        <div class="wyatb-box">
+          <h4>WYATB</h4>
+        </div>
+        <div class="typing-box">
+          <h4><span class="type"></span></h4>
+        </div>
+        <svg class="svg" width="603" height="134" viewbox="0 0 603 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M354.123 21.6738C350.022 14.8792 344.146 9.65017 336.513 5.98648C328.943 2.32357 320.166 0.5 310.198 0.5H258.725H258.225V1V132.944V133.444H258.725H285.912H286.412V132.944V86.9554H309.745C325.468 86.9554 337.83 83.2216 346.768 75.6914L346.769 75.6912C355.776 68.0934 360.268 57.7364 360.268 44.6792C360.268 36.0783 358.223 28.4049 354.123 21.6738ZM354.123 21.6738C354.124 21.6742 354.124 21.6746 354.124 21.675L353.698 21.9324L354.123 21.6733C354.123 21.6735 354.123 21.6736 354.123 21.6738ZM473.924 21.6738C469.822 14.8792 463.946 9.65017 456.314 5.98648C448.743 2.32357 439.967 0.5 429.999 0.5H378.526H378.026V1V132.944V133.444H378.526H405.712H406.212V132.944V86.9554H429.546C445.268 86.9554 457.631 83.2216 466.569 75.6914L466.569 75.6912C475.576 68.0934 480.068 57.7364 480.068 44.6792C480.068 36.0783 478.024 28.4049 473.924 21.6738ZM473.924 21.6738C473.924 21.6742 473.924 21.6746 473.925 21.675L473.497 21.9334L473.924 21.6733C473.924 21.6735 473.924 21.6736 473.924 21.6738ZM108.386 133.444H108.886V132.944V1V0.5H108.386H81.1994H80.6994V1V53.9662H28.6862V1V0.5H28.1862H1H0.5V1V132.944V133.444H1H28.1862H28.6862V132.944V76.8965H80.6994V132.944V133.444H81.1994H108.386ZM151.612 133.444H151.972L152.086 133.102L161.034 106.258H207.981L217.019 133.103L217.134 133.444H217.493H246.401H247.122L246.869 132.769L197.481 0.82472L197.359 0.5H197.013H171.82H171.473L171.352 0.825567L122.235 132.769L121.984 133.444H122.704H151.612ZM326.268 58.986L326.265 58.9887C322.644 62.2595 317.316 63.9345 310.198 63.9345H286.412V23.5208H310.828C317.429 23.6406 322.545 25.6587 326.239 29.5283C329.941 33.4067 331.809 38.501 331.809 44.8604C331.809 51.0368 329.943 55.7194 326.268 58.986ZM446.069 58.986L446.066 58.9887C442.445 62.2595 437.116 63.9345 429.999 63.9345H406.212V23.5208H430.628C437.23 23.6406 442.346 25.6587 446.039 29.5283C449.741 33.4067 451.61 38.501 451.61 44.8604C451.61 51.0368 449.744 55.7194 446.069 58.986ZM543.82 59.2515L516.996 0.791482L516.862 0.5H516.541H486.727H485.907L486.283 1.22896L529.544 85.2173V132.944V133.444H530.044H557.683H558.183V132.944V85.2172L601.445 1.22896L601.82 0.5H601H571.276H570.957L570.822 0.790339L543.82 59.2515ZM168.707 83.2367L184.419 35.927L200.305 83.2367H168.707Z" stroke="#413C3C" stroke-width="5"/>
+          </svg>
+          <img class="h layer" src="img/h.png" alt="" srcset="" speed="2.5">
+          <div class="b-box layer" speed="-1">
+            <img class="b" src="img/b.png" alt="" srcset="">
+          </div>
+          <div class="timer-final-page">
+            <span>30</span>
+          </div>
+          <div class="wyatb-btn-box"></div>
+      </div>
+    </div>
+    <div class="information">
+      <h4>"ERROR : EmP4t k0soN9 3MPaT"<br>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -<br>HALAMAN TIDAK DITEMUKAN</h4>
+      <img src="img/error.png" class="error-img" alt="">
+      <h4>!!! VIRUS TERDETEKSI !!!<br><br><br>Virus berbahaya ditemukan di Generic Android 7.1 Anda karena penjelajahan situs web dengan KONTEN DEWASA.<br><br>Gunakan PC/laptop untuk melanjutkan!</h4>
+    </div>
+<script src="js/matter.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
